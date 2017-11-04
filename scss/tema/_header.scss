@@ -1,0 +1,55 @@
+.main{
+  &-header{
+    background: url(../img/banner.png) fixed top center / cover ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__button{
+      text-transform: uppercase;
+      @include button(lighten($rosa,10),$blanco);
+      padding: .5em 1em;
+      transition: all .3s;
+      margin-bottom: -3em;
+      position: relative;
+      z-index: 5;
+      font-size: 1.2em;
+      &:hover{
+        box-shadow:0 0 0 2px $rosa;
+        background: rgba($blanco,.8);
+        color:$rosa;
+      }
+    }
+    &__icono{
+      color:$rosa;
+      font-size: 9em;
+      line-height: 0;
+    }
+  }
+  &-pointer{
+    border-radius: 50%;
+    opacity: 0;
+    transition:all .3s;
+    z-index: 20;
+    background: $azul;
+    color: white;
+    line-height: 0;
+    font-size: 4em;
+    position:fixed;
+    bottom:1em;
+    right: 1em;
+    &:before{
+      transform:translateY(-20%);
+      animation: sube .5s infinite alternate;
+    }
+    
+  }
+  @keyframes sube {
+    0%  {
+      transform:translateY(-25%);
+    }
+    100%  {
+      transform:translateY(-15%);
+    }
+  }
+}

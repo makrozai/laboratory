@@ -14,15 +14,18 @@
   $extra-bold : 800;
 
 // PALETA DE COLOR, modifique para su propia paleta de color
-  $azul        : steelblue;
-  $azul-oscuro : #255484;
-  $azul-claro  : lighten(steelblue,25%);
+  $azul        : #0D0D45;
+  $azul-oscuro : #23274A;
+  $azul-claro  : lighten($azul,25%);
   $negro       : #070D12;
   $blanco      : #FDFDFD;
   $gris        : #ccc;
   $gris-oscuro : #444;
   $gris-claro  : #f0f0f0;
   $rojo        : darken(tomato,10);
+  $rosa        : #FF256B;
+  $rosa-claro  : lighten($rosa,20%);
+  $celeste     : #A4EAFF;
 
 // ESTILOS BASE
   $body--background  : #fff;                      // fondo para el body
@@ -67,7 +70,8 @@
   @import "tema/header";
   @import "tema/footer";
   @import "tema/main";
-  @import "tema/aside";
+  @import "tema/services";
+  @import "tema/clients";
 
 // Modulos. Los componentes que se repiten en varias partes del proyecto
   @import "modulos/modulos";

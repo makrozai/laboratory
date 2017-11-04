@@ -1,0 +1,66 @@
+.main{
+  &-portafolio{
+    padding-top: 7em;
+    background: $celeste;
+    position:relative;
+    .ed-container{
+    position:relative;
+    z-index: 10;
+    }
+    &:after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position:absolute;
+      top: 0;
+      left: 0;
+      background: $celeste;
+      transform: skewY(5deg);
+      transform-origin:bottom left;
+      z-index: 4;
+    }
+    &__title{
+      text-transform: uppercase;
+      color: $rosa;
+      text-align: center;
+      font-size: 2.3em;
+    }
+    &__img{
+      padding:1em 0;
+      h3{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2em;
+        &:hover{
+          color: $azul;
+        }
+      }
+    }
+    &__image{
+      width: 100%;
+      cursor:pointer;
+      filter: grayscale(1);
+      transition:all .3s;
+      &:hover{
+        filter: grayscale(0);
+      }
+    }
+    &__cherry{
+      text-align: center;
+      color: $azul-oscuro;
+      margin-top: 3em;
+      font-size: 1.5rem;
+      h2{
+        margin-top: 0;
+      }
+    }
+    .icon-top::before{
+      font-size: 5em;
+      line-height: 0;
+      color: $rosa
+    }
+    &__subtitle{
+      color:$azul-oscuro;
+    }
+  }
+}

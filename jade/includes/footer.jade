@@ -1,0 +1,46 @@
+footer.main-footer#contact
+  .ed-container
+    .ed-item
+      h2.main-footer__title ¿listo para empezar tu proyecto?
+    .ed-item.tablet-50.main-footer__address
+      .main-footer__item
+        .main-footer__item-icon.icon-pin
+        .main-footer__copy
+          h3 dirección
+          p jr.belgrano 435 - Pueblo Libre
+      .main-footer__item
+        .main-footer__item-icon.icon-correo
+        .main-footer__copy
+          h3 Correo
+          p cuentas@digitallaboratory.com
+      .main-footer__item
+        .main-footer__item-icon.icon-telefono
+        .main-footer__copy
+          h3 teléfono
+          p 943744481
+      .main-footer__social
+        h3 Buscanos en
+        .main-footer__image
+          a(href="#!").main-footer__icon.icon-facebook
+          a(href="#!").main-footer__icon.icon-twitter
+          a(href="#!").main-footer__icon.icon-linkedin
+    .ed-item.tablet-50.main-footer__form
+      .contenedor-formulario
+        .wrap
+          form(action="index.php" class="formulario" name="formulario_registro" method="post")
+            div
+              .input-group
+                input(type="text" id="nombre" name="nombre")
+                label.label(for="nombre") Nombre
+              .input-group
+                input(type="tel" id="telefono" name="telefono")
+                label.label(for="telefono") teléfono
+              .input-group
+                input(type="email" id="correo" name="correo")
+                label.label(for="correo") Correo:
+              .input-group
+                textarea#textarea.label(name="area", cols="30", rows="10")
+                label.label(for="textarea") Cuéntanos ¿Cuándo nos juntamos?
+              input#btn-submit(type="submit" value="¡directo al laboratorio!")
+
+    

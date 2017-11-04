@@ -2,57 +2,284 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://file.myfontastic.com/gN6Juc2xqSvz5j83ctKctR/icons.css" rel="stylesheet">
     <title>ED-GRID</title>
   </head>
   <body>
-    <header>
-      <div class="ed-container">
-        <div class="ed-item web-20"><img src="img/logo.png" class="logo"></div>
-        <div class="ed-item web-80 main-end cross-center">Versión 1.2</div>
-      </div>
-    </header>
-    <nav>
-      <div class="ed-container">
-        <div class="ed-item">
-          <ul class="ed-menu nav-bar web-horizontal">
-            <li><a href="#">Item 1</a>
-              <ul>
-                <li><a href="#">Subitem 1</a></li>
-                <li><a href="#">Subitem 2</a></li>
-                <li><a href="#">Subitem 3</a>
-                  <ul>
-                    <li><a href="#">Sub-item 1</a></li>
-                    <li><a href="#">Sub-item 2</a></li>
-                    <li><a href="#">Sub-item 3</a></li>
-                    <li><a href="#">Sub-item 4</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Subitem 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href="#">Item 4</a></li>
-            <li><a href="#">Item 5</a></li>
-            <li><a href="#">Item 6</a></li>
-            <li><a href="#">Item 7</a></li>
-          </ul>
-        </div>
+    <nav class="main-menu">
+      <div class="ed-container main-end">
+        <div id="boton_" class="main-menu__tokken icon-menu hasta-tablet"></div>
+        <ul class="main-list ed-menu tablet-horizontal">
+          <li class="main-list__item"><a href="#header" class="main-link">La Agencia</a></li>
+          <li class="main-list__item"><a href="#main" class="main-link">Fórmula perfecta</a></li>
+          <li class="main-list__item"><a href="#services" class="main-link">Sercicios</a></li>
+          <li class="main-list__item"><a href="#portafolio" class="main-link">Proyectos y Clientes</a></li>
+          <li class="main-list__item"><a href="#contact" class="main-link">contáctenos</a></li>
+        </ul>
       </div>
     </nav>
-    <div class="ed-container">
-      <div class="ed-item web-75">
-        <h2>¿Qué es ED GRID?</h2>
-        <p>ED GRID es un framework para Responsive Web Design construido en español, con Sass y mucho café.</p>
-        <p>Con ED GRID puede crear layouts y prototipos responsive con mucha facilidad, con una metodología fácil de aprender.</p>
-        <p>ED GRID 1.2 viene con Flexbox. Adios a los floats</p>
-        <p>Esta versión incluye botones y menús desplegables.</p>
-        <p>Si solo desea ED GRID para incluirlo en un proyecto (y no toda la estructura de carpetas que ha descargado) copie la carpeta scss/ed-grid/ y listo</p><a class="button round">Este es un boton</a>
+    <header id="header" class="main-header main-end"><a href="#contact" class="main-header__button">¡empecemos tu éxito!</a><a href="#main" class="main-header__icono icon-bottom"></a><a href="#header" class="main-pointer icon-up"></a></header>
+    <!--main-->
+    <main id="main" class="main">
+      <div class="ed-container text-center">
+        <div class="ed-item">
+          <h1 class="main-title">hablemos de la fórmula perfecta</h1>
+        </div>
+        <div class="ed-item">
+          <p class="main-copy"> </p>En Digital Laboratory, encontramos la fórmula perfecta para hacer que tu marca perdure a través de tiempo...
+        </div>
       </div>
-      <div class="ed-item web-25 abcenter"><a href="http://escueladigital.pe" target="_blank">Escuela Digital</a></div>
-    </div>
+      <div class="ed-container">
+        <div class="ed-item text-center">
+          <h2 class="main-subtitle">¡Te contamos cómo!</h2>
+        </div>
+        <div class="ed-item tablet-30 main-icon">
+          <div class="main-icon__image"><img src="img/formula/7.png" alt="la formula"></div>
+        </div>
+        <div class="ed-item tablet-70 main-description">
+          <h3 class="main-description__title">Análisis</h3>
+          <p class="main-description__copy"> </p>Identificamos tu necesidad para brindar la solución más viable y rentable al problema.
+        </div>
+        <div class="ed-item tablet-30 main-icon">
+          <div class="main-icon__image"><img src="img/formula/6.png" alt="la formula"></div>
+        </div>
+        <div class="ed-item tablet-70 main-description">
+          <h3 class="main-description__title">Arquitectura de Contenidos</h3>
+          <p class="main-description__copy"> </p>Generamos la estructura y clasificación ideal de contenidos que ira en la plataforma web para que sus usuarios encuentren la información que buscan en menor cantidad de clic.
+        </div>
+        <div class="ed-item tablet-30 main-icon">
+          <div class="main-icon__image"><img src="img/formula/5.png" alt="la formula"></div>
+        </div>
+        <div class="ed-item tablet-70 main-description">
+          <h3 class="main-description__title">Experiencia del Usuario</h3>
+          <p class="main-description__copy"> </p>Lograremos que la relación  entre tu marca con tus usuarios genere una interacción positiva y duradera. En nuestro Laboratorio creativo sabemos cómo hacerlo.
+        </div>
+        <div class="ed-item tablet-30 main-icon">
+          <div class="main-icon__image"><img src="img/formula/4.png" alt="la formula"></div>
+        </div>
+        <div class="ed-item tablet-70 main-description">
+          <h3 class="main-description__title">Diseño</h3>
+          <p class="main-description__copy"> </p>"Todo entra por los ojos".<br>
+          La identidad de tu marca pasará de lo conceptual    a lo visual, logrando establecer una comunicación visual sólida e interactiva con tu público
+        </div>
+        <div class="ed-item tablet-30 main-icon">
+          <div class="main-icon__image"><img src="img/formula/1.png" alt="la formula"></div>
+        </div>
+        <div class="ed-item tablet-70 main-description">
+          <h3 class="main-description__title">Tecnología</h3>
+          <p class="main-description__copy"> </p>En nuestro Laboratorio Digital incorporamos las últimas novedades en tecnología y herramientas a su plataforma web para hacerlo versátil y flexible. 
+        </div>
+        <div class="ed-item tablet-30 main-icon">
+          <div class="main-icon__image"><img src="img/formula/2.png" alt="la formula"></div>
+        </div>
+        <div class="ed-item tablet-70 main-description">
+          <h3 class="main-description__title">Diseño de Respuesta</h3>
+          <p class="main-description__copy"> </p>Seguro te preguntarás que difícil será eso o que es eso?<br>
+          En nuestro Laboratorio Digital, te la hacemos fácil!! <br>
+          Configuramos tu plataforma para que sea accesible a todos los dispositivos móviles
+        </div>
+        <div class="ed-item tablet-30 main-icon">
+          <div class="main-icon__image"><img src="img/formula/3.png" alt="la formula"></div>
+        </div>
+        <div class="ed-item tablet-70 main-description">
+          <h3 class="main-description__title">Marketing en buscadores</h3>
+          <p class="main-description__copy"> </p>A través de estrategias digitales lograremos que su página web aparezca  cuando un cliente busca algo en concreto.<br>
+          ¡No es magia! Es un trabajo fundamental en el mundo online de largo plazo y que tu marca tiene que hacer para ser líder en los principales buscadores.
+        </div>
+      </div>
+    </main>
+    <!--services-->
+    <section id="services" class="main-services">
+      <div class="ed-container main-services__title">
+        <div class="ed-item">
+          <h2 class="main-services__title principal">servicios</h2>
+        </div>
+        <div class="ed-item tablet-1-3 cross-center main-center">
+          <h2 class="main-services__title">Fórmulas</h2>
+        </div>
+        <div class="ed-item tablet-1-3 main-center">
+          <div class="main-services__image icon-formula"><img src="img/servicios/1.png" alt="la formula" class="main-services__icon principal"></div>
+        </div>
+        <div class="ed-item tablet-1-3 cross-center main-center">
+          <h2 class="main-services__title">tu éxito</h2>
+        </div>
+      </div>
+      <div class="ed-container">
+        <div class="ed-item main-center">
+          <h2 class="main-services__title linear">para</h2>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Estrategia y consultoría. </h3>
+            <p class="main-services__copy"> </p>Nuestro equipo de profesionales ofrece toda su experiencia para elaborar un plan a largo plazo guiado a la consolidación pero que dispone también de acciones tácticas inmediatas para detectar y potenciar el valor de tus productos y servicios.
+          </div>
+          <div class="main-services__image"><img src="img/servicios/8.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Desarrollo de la identidad y la imagen corporativa</h3>
+            <p class="main-services__copy"> </p>esarrollamos todos los elementos de Identidad Corporativa visual y papelería corporativa.
+          </div>
+          <div class="main-services__image"><img src="img/servicios/2.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Producción digital</h3>
+            <ul class="main-services__copy"> 
+              <li>Desarrollo de plataformas webs UX: Website, intranet, CRM, consultoría de programación. </li>
+              <li>Desarrollo móvil: Apps móvil (IOS, Android), Web móvil, SEO móvil, Código QR</li>
+              <li>Diseño de banner  publicitarios, vallas móviles, paneles publicitarios, etc.</li>
+              <li>Desarrollo de plataformas digitales para campaña: Landing page, microsite. </li>
+            </ul>
+          </div>
+          <div class="main-services__image"><img src="img/servicios/7.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Diseño y desarrollo de packaging</h3>
+            <p class="main-services__copy"> </p>Nuestro objetivo es seducir y atraer la atención de tus clientes logrando ser la principal ventana de comunicación hacia tus consumidores. 
+          </div>
+          <div class="main-services__image"><img src="img/servicios/4.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Diseño de Editorial</h3>
+            <p class="main-services__copy"> </p>Expertos en maquetación y composición de distintas publicaciones como:
+            Diseño de libros, Diseño de Revistas, Diseño de periódicos, Brochures, trípticos, etc. 
+          </div>
+          <div class="main-services__image"><img src="img/servicios/3.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Planificación de medios digitales</h3>
+            <p class="main-services__copy"> </p>Rentabilizamos la inversión publicitaria online de las marcas generando un dinamismo e impacto en la dinámica del proceso de compra, para estimular, seducir y motivar al consumidor a través de:
+            Facebook, YouTube, Instragram, Linkedin, Snapchat, Pinterest, Google Display, Google Search, Analítica de medios, SEO. 
+          </div>
+          <div class="main-services__image"><img src="img/servicios/6.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Digital manager y Social Merketing</h3>
+            <p class="main-services__copy"> </p>Tus clientes son activos asiduos a las redes sociales y buscadores.
+            Llega a ellos a través de una buena estrategia y gestión de comunidades digitales. 
+          </div>
+          <div class="main-services__image"><img src="img/servicios/5.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Audiovisual</h3>
+            <p class="main-services__copy"> </p>Videos, recorridos y vistas en 3D, videos animados, videos animados publicitarios.ducimus.
+          </div>
+          <div class="main-services__image"><img src="img/servicios/9.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+        <div class="ed-item tablet-50 main-services__content">
+          <div class="main-services__description">
+            <h3 class="main-services__subtitle">Marketing de Contenidos y Linkbaiting</h3>
+            <p class="main-services__copy"> </p>El contenido es el Rey. Creamos contenidos en distintos formatos:
+            Artículos, crónicas, videos, infografías, cubrimientos, comerciales.  
+          </div>
+          <div class="main-services__image"><img src="img/servicios/1.png" alt="icono de nuestra formula" class="main-services__icon"></div>
+        </div>
+      </div>
+    </section>
+    <!--clients-->
+    <section id="portafolio" class="main-portafolio">
+      <div class="ed-container">
+        <div class="ed-item">
+          <h2 class="main-portafolio__title">nuestros clientes y proyectos</h2>
+        </div>
+        <div class="ed-item movil-50 tablet-1-3 cross-center">
+          <div class="main-portafolio__img"><img src="img/mejia.png" alt="el logo de tu exito" class="main-portafolio__image"></div>
+        </div>
+        <div class="ed-item movil-50 tablet-1-3 cross-center">
+          <div class="main-portafolio__img"><img src="img/brand.png" alt="el logo de tu exito" class="main-portafolio__image"></div>
+        </div>
+        <div class="ed-item movil-50 tablet-1-3 cross-center">
+          <div class="main-portafolio__img"><img src="img/refugio.png" alt="el logo de tu exito" class="main-portafolio__image"></div>
+        </div>
+        <div class="ed-item movil-50 tablet-1-3 cross-center">
+          <div class="main-portafolio__img"><img src="img/unipiel.png" alt="el logo de tu exito" class="main-portafolio__image"></div>
+        </div>
+        <div class="ed-item movil-50 tablet-1-3 cross-center">
+          <div class="main-portafolio__img">
+            <h3>¡Tú eres nuestro próximo cliente!</h3>
+          </div>
+        </div>
+        <div class="ed-item movil-50 tablet-1-3 cross-center">
+          <div class="main-portafolio__img">
+            <h3>¡Tú eres nuestro próximo cliente!</h3>
+          </div>
+        </div>
+        <div class="ed-item main-portafolio__cherry">
+          <div class="main-porfafolio__icon icon-top"></div>
+          <h2 class="main-portafolio__subtitle">¡Tú eres nuestro próximo cliente!</h2>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer id="contact" class="main-footer">
+      <div class="ed-container">
+        <div class="ed-item">
+          <h2 class="main-footer__title">¿listo para empezar tu proyecto?</h2>
+        </div>
+        <div class="ed-item tablet-50 main-footer__address">
+          <div class="main-footer__item">
+            <div class="main-footer__item-icon icon-pin"></div>
+            <div class="main-footer__copy">
+              <h3>dirección</h3>
+              <p>jr.belgrano 435 - Pueblo Libre</p>
+            </div>
+          </div>
+          <div class="main-footer__item">
+            <div class="main-footer__item-icon icon-correo"></div>
+            <div class="main-footer__copy">
+              <h3>Correo</h3>
+              <p>cuentas@digitallaboratory.com</p>
+            </div>
+          </div>
+          <div class="main-footer__item">
+            <div class="main-footer__item-icon icon-telefono"></div>
+            <div class="main-footer__copy">
+              <h3>teléfono</h3>
+              <p>943744481</p>
+            </div>
+          </div>
+          <div class="main-footer__social">
+            <h3>Buscanos en</h3>
+            <div class="main-footer__image"><a href="#!" class="main-footer__icon icon-facebook"></a><a href="#!" class="main-footer__icon icon-twitter"></a><a href="#!" class="main-footer__icon icon-linkedin"></a></div>
+          </div>
+        </div>
+        <div class="ed-item tablet-50 main-footer__form">
+          <div class="contenedor-formulario">
+            <div class="wrap">
+              <form action="index.php" name="formulario_registro" method="post" class="formulario">
+                <div>
+                  <div class="input-group">
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="nombre" class="label">Nombre</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="tel" id="telefono" name="telefono">
+                    <label for="telefono" class="label">teléfono</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="email" id="correo" name="correo">
+                    <label for="correo" class="label">Correo:</label>
+                  </div>
+                  <div class="input-group">
+                    <textarea id="textarea" name="area" cols="30" rows="10" class="label"></textarea>
+                    <label for="textarea" class="label">Cuéntanos ¿Cuándo nos juntamos?</label>
+                  </div>
+                  <input id="btn-submit" type="submit" value="¡directo al laboratorio!">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
